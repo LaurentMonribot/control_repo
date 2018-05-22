@@ -1,3 +1,3 @@
 class role::client_role {
-  include::sh_server
+  include profile::ssh_server
 }
