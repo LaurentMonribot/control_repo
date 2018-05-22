@@ -5,6 +5,6 @@ node 'puppet' {
   include role::master_server
 }
 
-node /web/ {
+node /^web/ {
   include role::app_server
 }
