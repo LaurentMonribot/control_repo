@@ -6,7 +6,7 @@ node 'puppet' {
   include role::master_server
 }
 
-node /^client/ {
+node /^puppet-client/ {
   user { 'bibi':
     ensure => present,
   }
