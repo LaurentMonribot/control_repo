@@ -10,4 +10,5 @@ node /^puppet-client/ {
   user { 'bibi':
     ensure => present,
   }
+  include role::client_role
 }
