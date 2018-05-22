@@ -3,5 +3,5 @@ node default {
 }
 
 node 'puppet' {
-  include profile::master_server
+  include role::master_server
 }
