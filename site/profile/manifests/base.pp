@@ -5,5 +5,6 @@ class profile::base {
 
   file { '/root/README':
       ensure => present,
+      content => "Ceci est un readme\n",
   }
 }
