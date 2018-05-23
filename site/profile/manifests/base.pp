@@ -10,6 +10,6 @@ class profile::base {
   
   file { '/etc/motd':
       ensure => file,
-      content => <%= (hostname.center 43, " ").center 45, '#' %>,
+      content => "Bonjour, vous êtes sur la machine ${fqdn}, ip ${ipaddress}\n",
   }
 }
