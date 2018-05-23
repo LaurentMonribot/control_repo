@@ -10,14 +10,14 @@ class profile::base {
   
   host { 'puppet-client-1':
     name         => 'puppet-client-1',
-    ensure       => file,
+    ensure       => present,
     host_aliases => 'firstclient',
     ip           => '10.94.69.4',
   }
   
   host { 'puppet-client-2':
     name         => 'puppet-client-2',
-    ensure       => file,
+    ensure       => present,
     host_aliases => 'secondclient',
     ip           => '10.94.69.8',
   }
