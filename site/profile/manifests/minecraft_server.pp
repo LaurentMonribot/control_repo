@@ -18,7 +18,7 @@ class profile::minecraft_server {
   
   file { '/etc/systemd/system/minecraft.service':
       ensure => file,
-      content => "[Unit]\nDescription=Minecraft server\nAfter=network-online.target\nWants=network.target\nRequires=network-online.target\nConditionPathExists=/opt/minecraft\n[Service]\nWorkingDirectory=/opt/minecraft\nExecStart=/usr/bin/java -Xmx512M -Xms512M -jar server.jar nogui\nRestart=always\nRestartPreventExitStatus=255\nType=notify\n[Install]\nWantedBy=multi-user.target\nAlias=minecraft\n",
+      content => "[Unit]\nDescription=Minecraft server\nAfter=network-online.target\nWants=network.target\nRequires=network-online.target\nConditionPathExists=/opt/minecraft\n[Service]\nWorkingDirectory=/opt/minecraft\nExecStart=/usr/bin/java -Xmx32M -Xms512M -jar server.jar nogui\nRestart=always\nRestartPreventExitStatus=255\nType=notify\n[Install]\nWantedBy=multi-user.target\nAlias=minecraft\n",
       owner  => 'root',
       group  => 'root',
       mode    => '0644',
