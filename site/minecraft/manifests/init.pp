@@ -1,4 +1,4 @@
-class profile::minecraft_server {
+class minecraft {
   include ::wget
   
   file { '/opt/minecraft':
