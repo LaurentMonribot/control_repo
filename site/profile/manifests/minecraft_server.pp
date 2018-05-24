@@ -29,5 +29,10 @@ class profile::minecraft_server {
     timeout     => 15,
     verbose     => true,
   }
+  
+  service {'minecraft':
+    ensure  =>  running,
+    enable  =>  true,
+  }
 
 }
