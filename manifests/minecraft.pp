@@ -1,3 +1,3 @@
 node mine1 {
-  include profile::minecraft
+  include role::minecraft_role
 }
