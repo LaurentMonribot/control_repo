@@ -10,7 +10,7 @@ class profile::minecraft_server {
   
   file { '/opt/minecraft/eula.txt':
     ensure => file,
-    content => "eula=true",
+    content => 'eula=true',
     owner  => 'root',
     group  => 'root',
     mode    => '0644',
