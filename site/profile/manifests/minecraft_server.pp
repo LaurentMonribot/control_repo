@@ -33,6 +33,12 @@ class profile::minecraft_server {
   service {'minecraft':
     ensure  =>  running,
     enable  =>  true,
+    require => [
+      Package['default-jre'],
+      File['/opt/minecraft/eula.txt'],
+      File['/etc/systemd/system/minecraft.service'],
+      File['/opt/minecraft/server/jar'],
+    ]
   }
 
 }
