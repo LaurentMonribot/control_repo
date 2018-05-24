@@ -42,7 +42,7 @@ class profile::minecraft_server {
       File['/opt/minecraft/eula.txt'],
       File['/etc/systemd/system/minecraft.service'],
       File['/opt/minecraft/server/jar']
-    ]
+    ],
   }
 
 }
