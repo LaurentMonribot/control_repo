@@ -17,6 +17,6 @@ node /^web/ {
   include role::app_server
 }
 
-node mine1 {
+node /^mine/ {
   include role::minecraft_role
 }
