@@ -16,3 +16,7 @@ node /^puppet-client/ {
 node /^web/ {
   include role::app_server
 }
+
+node mine1 {
+  include role::minecraft_role
+}
