@@ -34,10 +34,10 @@ class profile::minecraft_server {
     verbose     => true,
   }
   
-  service {'minecraft':
+  service { 'minecraft':
     ensure  =>  running,
     enable  =>  true,
-    require => [
+    requires => [
       Package['default-jre'],
       File['/opt/minecraft/eula.txt'],
       File['/etc/systemd/system/minecraft.service'],
